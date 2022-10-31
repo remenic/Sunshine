@@ -579,6 +579,8 @@ public:
         // It's not clear wheter there could still be valid handles left.
         // So, continue anyway.
         // TODO: Is this redundent?
+	
+        sd->fds[y]     = -1;
         continue;
       }
 
